@@ -7,7 +7,7 @@
 - install mongodb
 
 ``` bash
-# 以下はmacの手順で、windowsは適切調べてください
+# 以下はmacの手順で、windowsは調べてください、mongodb4系をinstallしてください。
 
 # install
 brew install mongodb-community
@@ -49,7 +49,7 @@ yarn start
 
 ``` bash
 cd /your/path/like/desktop/prct-back
-npm run windev
+yarn windev
 ```
 
 # 注意
