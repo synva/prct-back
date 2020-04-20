@@ -19,19 +19,7 @@ class UserService {
     logger.info('new user:', user._id)
     let result = await mongo.find('users', {_id: user._id})
     if (result.list.length <= 0) {
-      user.role = 2
-      user.IRISpan = 100
-      user.IRIOverlap = 10
-      user.IRIIndex = 0
-      user.IRIs = [{
-        IRISpan: 100,
-        IRIOverlap: 10
-      }]
-      user.canIri = false
-      user.canFlt = false
-      user.credit = 0
-      user.auto = true
-      user.language = 'en'
+      user.role = 0
       user.cuser = user._id
       user.uuser = user._id
       let now = new Date()
