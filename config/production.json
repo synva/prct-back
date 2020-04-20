@@ -1,0 +1,22 @@
+{
+  "port": 3000,
+  "cors": ["http://localhost:4200"],
+  "logger": {
+    "appenders": {"system": {"type": "console"}},
+    "categories": {"default": {"appenders": ["system"], "level": "all"}}
+  },
+  "mongo": {
+    "server": "localhost",
+    "port": 27017,
+    "db": "prct",
+    "limit": 12,
+    "user": "prct",
+    "password": "password"
+  },
+  "session": {
+    "cookiePath": "/session/",
+    "cookieMaxAge": 1209600000,
+    "key": "prct",
+    "secret": "prct-secret"
+  }
+}
